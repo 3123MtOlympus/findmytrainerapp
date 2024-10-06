@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Find My Trainer MVP</title>
+  <link rel="stylesheet" href="/findmytrainerapp/asset/style.css">
+</head>
+<body>
+  <header>
+    <h1>Find My Trainer</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#trainers">Find Trainers</a></li>
+        <li><a href="#register">Register as a Trainer</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="search">
+    <h2>Find Your Perfect Trainer</h2>
+    <input type="text" id="searchInput" placeholder="Search by location or specialty...">
+    <button onclick="searchTrainers()">Search</button>
+  </section>
+
+  <section id="trainers-list">
+    <h2>Available Trainers</h2>
+    <div id="trainerResults"></div>
+  </section>
+
+  <section id="register">
+    <h2>Register as a Trainer</h2>
+    <form id="trainerForm">
+      <input type="text" id="name" placeholder="Name" required>
+      <input type="text" id="specialty" placeholder="Specialty" required>
+      <input type="text" id="location" placeholder="Location" required>
+      <input type="text" id="contact" placeholder="Phone/Email" required>
+      <button type="submit">Submit</button>
+    </form>
+    <div id="formMessage"></div>
+  </section>
+
+  <script src="/findmytrainerapp/asset/script.js"></script>
+</body>
+</html>
